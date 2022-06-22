@@ -1,25 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import NavBar from './component/NavBar/navbar';
+import Layout from './component/Layout/layout';
+// import { ThemeProvider, createTheme } from '@material-ui/core/styles';
 
-function App() {
+
+const App = () => {
+  //   const theme = createTheme({
+  //     typography: {
+  //       fontFamily: ['Cooper Black'],
+  // },
+  //   });
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <NavBar />
+      <Layout />
+
+
+      {/* <ThemeProvider theme={theme}> */}
+      {/* </ThemeProvider> */}
+
+    </>
+  )
 }
 
 export default App;
