@@ -1,9 +1,11 @@
 import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles(() => ({
-    navlink: {
-        marginLeft: '4px',
+    aboutintro: {
+        backgroundColor: 'white',
+        overflowY: 'scroll',
+        height: '100vh',
+
     }
 }));
-
 

@@ -4,9 +4,11 @@ export default makeStyles(() => ({
     image: {
         width: '350px',
         height: '350px',
-        borderRadius: '10px',
+        borderRadius: '100px 100px 0px 0px',
+
     },
     name: {
+        color: 'black',
         fontFamily: 'roboto',
         textAlign: 'center',
         fontWeight: 'bold',
@@ -15,8 +17,8 @@ export default makeStyles(() => ({
     },
     title: {
         fontFamily: 'roboto',
-        color: 'grey',
-        fontSize: '11px',
+        color: 'black',
+        fontSize: '8px',
         fontStyle: 'italic',
         display: 'flex',
         justifyContent: 'center',
@@ -28,11 +30,28 @@ export default makeStyles(() => ({
         gap: '15px',
     },
     icon: {
+        color: 'white',
         '&:hover': {
-            color: 'grey',
+            color: 'rgba(200,200,200, 0.5)',
             cursor: 'pointer',
         },
-    }
+    },
+    divider: {
+        backgroundColor: 'cyan',
+        marginTop: '20px'
+    },
+    downloadcv: {
+        display: 'flex',
+        justifyContent: 'center',
+        gap: '15px',
+        marginTop: '30px',
+        color: 'white',
+        '&:hover': {
+            color: 'rgba(200,200,200, 0.5)',
+            cursor: 'pointer',
+        },
+
+    },
 
 }));
 
