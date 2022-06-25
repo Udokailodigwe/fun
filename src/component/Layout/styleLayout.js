@@ -4,23 +4,64 @@ export default makeStyles(() => ({
     container: {
         display: 'flex',
         justifyContent: 'center',
-        height: '100vh'
+        /*medium device*/
+        '@media (max-width:1120px)': {
+            flexDirection: 'column',
+        }
     },
     paper1: {
-        borderRadius: '16px 16px 0px 0px',
-        backgroundColor: 'rgba(255, 255, 255, 0.3)',
+        borderRadius: '4px',
+        backgroundColor: 'rgba(255, 255, 255, 0.2)',
         boxShadow: '0 4px 5px rgba(20, 250, 250, 0.9)',
         backdropFilter: 'blur(9.1px)',
         width: '800px',
-        height: '100vh'
+        height: '100vh',
+        marginTop: '10vh',
+        /*medium device*/
+        '@media (min-width:541px) and (max-width: 680px)': {
+            width: '450px',
+            margin: '2vh -10px',
+        },
+        /*mobile device*/
+        '@media (min-width:280px) and (max-width: 540px)': {
+            width: '330px',
+            margin: '2vh -20px',
+        },
+        /*mobile device*/
+        '@media (max-width:360px)': {
+            width: '230px',
+            margin: '2vh -20px',
+        },
     },
+
     paper2: {
         borderRadius: '100px 100px 0px 0px',
-        backgroundColor: 'rgba(250, 255, 255, 0.3)',
+        backgroundColor: 'rgba(250, 255, 255, 0.2)',
         boxShadow: '0 4px 5px rgba(20, 250, 250, 0.9)',
         backdropFilter: 'blur(9.1px)',
-        height: '100vh',
         width: '350px',
-        position: 'fixed'
-    }
+        position: 'fixed',
+        height: '100vh',
+        marginTop: '10vh',
+        /*medium device*/
+        '@media (min-width:541px) and (max-width: 680px)': {
+            position: 'relative',
+            width: '450px',
+            margin: '2vh -10px',
+        },
+        /*mobile device*/
+        '@media (min-width:280px) and (max-width: 540px)': {
+            width: '330px',
+            height: '520px',
+            margin: '2vh -20px',
+            position: 'relative',
+        },
+        /*mobile device*/
+        '@media (max-width:360px)': {
+            width: '230px',
+            height: '400px',
+            margin: '2vh -20px',
+            position: 'relative',
+        },
+    },
 }))

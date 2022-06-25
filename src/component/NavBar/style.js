@@ -2,7 +2,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 export default makeStyles(() => ({
     appBar: {
-        backgroundColor: 'rgba(255, 255, 255, 0.3)',
+        backgroundColor: 'rgba(255, 255, 255, 0.1)',
         backdropFilter: 'blur(9.1px)',
         // position: 'absolute',
         right: 5,
@@ -10,8 +10,16 @@ export default makeStyles(() => ({
         width: '30px',
         minHeight: '400px',
         borderRadius: '3px',
-        boxShadow: '0 2px 10px rgba(20, 250, 250, 0.5)',
-        position: 'fixed'
+        boxShadow: '0 4px 5px rgba(20, 250, 250, 0.9)',
+        position: 'fixed',
+        /*mobile device*/
+        '@media (min-width:280px) and (max-width: 540px)': {
+            width: '30px',
+        },
+        /*mobile device*/
+        '@media (max-width:360px)': {
+            width: '20px',
+        },
 
     },
     menu: {
@@ -32,7 +40,16 @@ export default makeStyles(() => ({
         color: 'cyan',
         position: 'relative',
         right: 9,
-        letterSpacing: '2px'
+        letterSpacing: '2px',
+        cursor: 'pointer',
+        /*mobile device*/
+        '@media (min-width:280px) and (max-width: 540px)': {
+            fontSize: '16px'
+        },
+        /*mobile device*/
+        '@media (max-width:360px)': {
+            fontSize: '14px',
+        },
     },
 }));
 

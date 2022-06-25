@@ -5,6 +5,21 @@ export default makeStyles(() => ({
         width: '350px',
         height: '350px',
         borderRadius: '100px 100px 0px 0px',
+        /*medium devices*/
+        '@media (min-width:541px) and (max-width: 680px)': {
+            width: '450px',
+            height: '450px'
+        },
+        /*mobile device*/
+        '@media (min-width:280px) and (max-width: 540px)': {
+            width: '330px',
+            height: '330px',
+        },
+        /*mobile device*/
+        '@media (max-width:360px)': {
+            width: '230px',
+            height: '230px',
+        },
 
     },
     name: {
@@ -13,7 +28,15 @@ export default makeStyles(() => ({
         textAlign: 'center',
         fontWeight: 'bold',
         fontSize: '30px',
-        margin: '5px'
+        margin: '5px',
+        /*mobile device*/
+        '@media (min-width:280px) and (max-width: 540px)': {
+            fontSize: '30px',
+        },
+        /*mobile devices*/
+        '@media (max-width:360px)': {
+            fontSize: '20px',
+        },
     },
     title: {
         fontFamily: 'roboto',
