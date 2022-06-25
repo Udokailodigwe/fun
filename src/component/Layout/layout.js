@@ -3,6 +3,8 @@ import Home from '../Home/home';
 import About from '../About/about';
 import Project from '../Project/project';
 import Contact from '../Contact/contact';
+
+
 import { Paper, Container, Typography } from '@material-ui/core';
 
 import useStyles from './styleLayout';
@@ -12,19 +14,25 @@ const Layout = () => {
 
     return (
         <Container className={classes.container}>
-            <Paper variant="outlined" className={classes.paper1}>
-                <Typography variant="h5">
+            <Container className={classes.h}>
+                <Paper elevation={24} className={classes.paper2} >
+                    <Typography>
+                        <Home />
+                    </Typography>
+                </Paper>
+            </Container>
+            <Container className={classes.apc}>
+                <Paper variant="outlined" className={classes.paper1} id='about' >
                     <About />
+                </Paper>
+                <Paper variant="outlined" className={`${classes.paper1} ${classes.project}`} id='project' >
                     <Project />
+                </Paper>
+                <Paper variant="outlined" className={`${classes.paper1} ${classes.contact}`} id='contact' >
                     <Contact />
-                </Typography>
-            </Paper >
-            <Paper elevation={24} className={classes.paper2}>
-                <Typography variant="h5">
-                    <Home />
-                </Typography>
-            </Paper>
-        </Container>
+                </Paper >
+            </Container>
+        </Container >
     )
 }
 

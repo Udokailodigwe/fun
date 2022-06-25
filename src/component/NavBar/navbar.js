@@ -1,47 +1,39 @@
 import React from 'react';
-import { AppBar, Toolbar, Divider, Typography, MenuItem, Box } from '@material-ui/core';
-import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
-import PersonIcon from '@material-ui/icons/Person';
-import WorkIcon from '@material-ui/icons/Work';
-
-
+import { Link } from 'react-scroll';
+import { AppBar, Toolbar, MenuList, Typography, Box } from '@material-ui/core';
 
 import useStyles from './style';
 
 const NavBar = () => {
     const classes = useStyles();
 
-    return (
 
+
+    return (
         <AppBar className={classes.appBar} >
             <Toolbar className={classes.toolbar}>
                 <Box>
-                    {/* <MenuItem className={classes.menu}>
-                        <HomeIcon />
-                        <Typography className={classes.navlink}>
-                            HOME
-                        </Typography>
-                    </MenuItem> */}
-                    <MenuItem className={classes.menu}>
-                        <PersonIcon />
-                        <Typography className={classes.navlink}>
-                            ABOUT
-                        </Typography>
-                    </MenuItem>
-                    <Divider variant="middle" component="li" />
-                    <MenuItem className={classes.menu}>
-                        <WorkIcon />
-                        <Typography className={classes.navlink}>
-                            PROJECT
-                        </Typography>
-                    </MenuItem>
-                    <Divider variant="middle" component="li" />
-                    <MenuItem className={classes.menu}>
-                        <AlternateEmailIcon />
-                        <Typography className={classes.navlink}>
-                            CONTACT
-                        </Typography>
-                    </MenuItem>
+                    <MenuList className={classes.menu}>
+                        <Link to="about" spy={true} smooth={true} offset={0} duration={500} >
+                            <Typography className={classes.navlink}>
+                                ABOUT
+                            </Typography>
+                        </Link>
+                    </MenuList>
+                    <MenuList className={classes.menu}>
+                        <Link to="project" spy={true} smooth={true} offset={0} duration={500}>
+                            <Typography className={classes.navlink}>
+                                PROJECT
+                            </Typography>
+                        </Link>
+                    </MenuList>
+                    <MenuList className={classes.menu}>
+                        <Link to="contact" spy={true} smooth={true} offset={0} duration={500}>
+                            <Typography className={classes.navlink}>
+                                CONTACT
+                            </Typography>
+                        </Link>
+                    </MenuList>
                 </Box>
             </Toolbar >
         </AppBar >
