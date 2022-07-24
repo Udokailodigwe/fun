@@ -4,8 +4,8 @@ export default makeStyles(() => ({
     container: {
         display: 'flex',
         justifyContent: 'center',
-        /*medium device*/
-        '@media (max-width:1120px)': {
+        /*devices*/
+        '@media (max-width:1264px)': {
             flexDirection: 'column',
         }
     },
@@ -17,9 +17,9 @@ export default makeStyles(() => ({
         width: '800px',
         height: '100vh',
         marginTop: '10vh',
-        /*medium device*/
-        '@media (min-width:541px) and (max-width: 680px)': {
-            width: '450px',
+        /*medium and large device*/
+        '@media (min-width:541px) and (max-width: 1264px)': {
+            width: '600px',
             margin: '2vh -10px',
         },
         /*mobile device*/
@@ -43,11 +43,12 @@ export default makeStyles(() => ({
         position: 'fixed',
         height: '100vh',
         marginTop: '10vh',
-        /*medium device*/
-        '@media (min-width:541px) and (max-width: 680px)': {
-            position: 'relative',
-            width: '450px',
+        /*medium and large device*/
+        '@media (min-width:541px) and (max-width: 1264px)': {
+            width: '300px',
             margin: '2vh -10px',
+            height: '520px',
+            position: 'relative',
         },
         /*mobile device*/
         '@media (min-width:280px) and (max-width: 540px)': {

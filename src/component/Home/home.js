@@ -27,7 +27,7 @@ const Home = () => {
             <img src={image} className={classes.image} alt="myPix" />
             <Box>
                 <Typography className={classes.name} component="div">
-                    UDOKA ILODIGWE
+                    UDODIGWE TOCHUKWU UDOKA
                 </Typography>
                 <Typography className={classes.title}>
                     <TypeWriterEffect

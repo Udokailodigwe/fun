@@ -4,7 +4,6 @@ import About from '../About/about';
 import Project from '../Project/project';
 import Contact from '../Contact/contact';
 
-
 import { Paper, Container, Typography } from '@material-ui/core';
 
 import useStyles from './styleLayout';
@@ -22,7 +21,7 @@ const Layout = () => {
                 </Paper>
             </Container>
             <Container className={classes.apc}>
-                <Paper variant="outlined" className={classes.paper1} id='about' >
+                <Paper variant="outlined" className={classes.paper1} id='about'>
                     <About />
                 </Paper>
                 <Paper variant="outlined" className={`${classes.paper1} ${classes.project}`} id='project' >

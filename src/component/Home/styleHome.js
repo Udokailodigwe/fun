@@ -5,10 +5,11 @@ export default makeStyles(() => ({
         width: '350px',
         height: '350px',
         borderRadius: '100px 100px 0px 0px',
-        /*medium devices*/
-        '@media (min-width:541px) and (max-width: 680px)': {
-            width: '450px',
-            height: '450px'
+
+        /*medium and large devices*/
+        '@media (min-width:541px) and (max-width: 1264px)': {
+            width: '300px',
+            height: '300px'
         },
         /*mobile device*/
         '@media (min-width:280px) and (max-width: 540px)': {
@@ -29,6 +30,7 @@ export default makeStyles(() => ({
         fontWeight: 'bold',
         fontSize: '30px',
         margin: '5px',
+        textShadow: '0 4px 5px rgba(20, 250, 250, 0.9)',
         /*mobile device*/
         '@media (min-width:280px) and (max-width: 540px)': {
             fontSize: '30px',
